@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neonest - Virtual Hub for Remote Professionals</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.20.6/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .neon-gradient {
+      background: linear-gradient(to right, #ff6f61, #d81b60, #8e24aa);
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function App() {
+      return (
+        <div className="font-sans">
+          {/* Header */}
+          <header className="neon-gradient text-white py-6">
+            <div className="container mx-auto px-4 flex justify-between items-center">
+              <h1 className="text-3xl font-bold">Neonest</h1>
+              <nav>
+                <a href="#features" className="mx-4 hover:text-gray-200">Features</a>
+                <a href="#mission" className="mx-4 hover:text-gray-200">Our Mission</a>
+                <a href="#signup" className="mx-4 bg-white text-indigo-600 px-4 py-2 rounded-full hover:bg-gray-200">Sign Up</a>
+              </nav>
+            </div>
+          </header>
+
+          {/* Hero Section */}
+          <section className="bg-gray-50 py-20 text-center">
+            <div className="container mx-auto px-4">
+              <h2 className="text-4xl font-bold mb-4 text-gray-900">Build Community, Boost Connection</h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Neonest is the virtual hub for remote professionals to combat isolation, foster meaningful connections, and enhance workplace satisfaction.
+              </p>
+              <a href="#signup" className="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700">
+                Join the Community
+              </a>
+            </div>
+          </section>
+
+          {/* Features Section */}
+          <section id="features" className="py-20">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Features Designed for Remote Professionals</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="p-6 bg-white shadow-lg rounded-lg">
+                  <h3 className="text-xl font-semibold mb-2 text-indigo-600">Customizable Community Spaces</h3>
+                  <p className="text-gray-600">
+                    Join or create groups based on your industry, profession, or hobbies to connect with like-minded professionals.
+                  </p>
+                </div>
+                <div className="p-6 bg-white shadow-lg rounded-lg">
+                  <h3 className="text-xl font-semibold mb-2 text-indigo-600">Voice and Video Rooms</h3>
+                  <p className="text-gray-600">
+                    Enjoy spontaneous chats, virtual co-working sessions, or informal hangouts that mimic office breakroom vibes.
+                  </p>
+                </div>
+                <div className="p-6 bg-white shadow-lg rounded-lg">
+                  <h3 className="text-xl font-semibold mb-2 text-indigo-600">Seamless Productivity Integration</h3>
+                  <p className="text-gray-600">
+                    Sync with tools like Google Calendar, Trello, or Slack to complement your workflow without disruption.
+                  </p>
+                </div>
+                <div className="p-6 bg-white shadow-lg rounded-lg">
+                  <h3 className="text-xl font-semibold mb-2 text-indigo-600">Persistent Text Channels</h3>
+                  <p className="text-gray-600">
+                    Engage in ongoing discussions and asynchronous conversations, perfect for global teams across time zones.
+                  </p>
+                </div>
+                <div className="p-6 bg-white shadow-lg rounded-lg">
+                  <h3 className="text-xl font-semibold mb-2 text-indigo-600">Event Scheduling & Meetups</h3>
+                  <p className="text-gray-600">
+                    Host virtual coffee breaks, workshops, or skill-sharing sessions to build deeper connections.
+                  </p>
+                </div>
+                <div className="p-6 bg-white shadow-lg rounded-lg">
+                  <h3 className="text-xl font-semibold mb-2 text-indigo-600">Screen Sharing & Collaboration</h3>
+                  <p className="text-gray-600">
+                    Brainstorm ideas, share knowledge, or co-create in real-time with built-in collaboration tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Mission Section */}
+          <section id="mission" className="bg-indigo-50 py-20">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Mission</h2>
+              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+                At Neonest, we believe remote work shouldn’t mean working alone. Our mission is to create a digital platform that bridges the emotional gap of remote work, fostering a sense of belonging, community, and professional fulfillment for every user.
+              </p>
+            </div>
+          </section>
+
+          {/* Call-to-Action Section */}
+          <section id="signup" className="py-20 text-center neon-gradient text-white">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold mb-4">Ready to Connect?</h2>
+              <p className="text-lg mb-6">
+                Join Neonest today and be part of a vibrant community of remote professionals.
+              </p>
+              <div className="flex justify-center">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="px-4 py-2 rounded-l-full text-gray-800 focus:outline-none"
+                />
+                <button className="bg-white text-indigo-600 px-4 py-2 rounded-r-full hover:bg-gray-200">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </section>
+
+          {/* Footer */}
+          <footer className="bg-gray-800 text-white py-6">
+            <div className="container mx-auto px-4 text-center">
+              <p>&copy; 2025 Neonest. All rights reserved.</p>
+              <div className="mt-4">
+                <a href="#" className="mx-2 hover:text-gray-300">Privacy Policy</a>
+                <a href="#" className="mx-2 hover:text-gray-300">Terms of Service</a>
+                <a href="#" className="mx-2 hover:text-gray-300">Contact Us</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
